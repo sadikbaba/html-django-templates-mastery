@@ -2,5 +2,21 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
+from django.shortcuts import render
+
 def home(request):
-    return HttpResponse("Hello from Django! This is my first view.")
+
+    context = {
+        'name': 'Sadik',
+        'course': 'HTML + Django Templates'
+    }
+    return render(request, 'core/home.html', context)
+
+
+def about(request):
+
+     context = {
+         'name': 'Sadik',
+         'course': 'HTML + Django Templates'
+     }
+     return render(request, "core/about.html", context) 
