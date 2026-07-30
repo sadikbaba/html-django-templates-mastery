@@ -150,17 +150,17 @@ Then delete the project folder and rebuild the core (models + main templates + a
 ## Final Checklists
 
 ### Portfolio Checklist
-- [ ] At least 3 public GitHub repositories
-- [ ] Every repo has a clear README + live demo
-- [ ] Screenshots / short demo
-- [ ] “Rebuilt from memory” note in the final project
+- [x] At least 3 public GitHub repositories
+- [x] Every repo has a clear README + live demo
+- [x] Screenshots / short demo
+- [x] “Rebuilt from memory” note in the final project
 
 ### GitHub Project Checklist
-- [ ] Meaningful commit history
-- [ ] Proper `.gitignore`
-- [ ] `requirements.txt` (or equivalent)
-- [ ] Clear folder structure
-- [ ] LICENSE
+- [x] Meaningful commit history
+- [x] Proper `.gitignore`
+- [x] `requirements.txt` (or equivalent)
+- [x] Clear folder structure
+- [x] LICENSE
 
 ### Interview Preparation
 - Explain the full request → view → template → response cycle
