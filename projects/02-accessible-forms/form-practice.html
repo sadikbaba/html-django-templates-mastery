@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+
+   <form action="#" method="post">
+  <fieldset>
+    <legend>Contact Information</legend>
+
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Experience Level</legend>
+
+    <input type="radio" id="beginner" name="level" value="beginner">
+    <label for="beginner">Beginner</label><br>
+
+    <input type="radio" id="intermediate" name="level" value="intermediate">
+    <label for="intermediate">Intermediate</label><br>
+
+    <input type="radio" id="advanced" name="level" value="advanced">
+    <label for="advanced">Advanced</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Topics you are interested in</legend>
+
+    <input type="checkbox" id="html" name="skills" value="html">
+    <label for="html">HTML</label><br>
+
+    <input type="checkbox" id="css" name="skills" value="css">
+    <label for="css">CSS</label><br>
+
+    <input type="checkbox" id="javascript" name="skills" value="javascript">
+    <label for="javascript">JavaScript</label>
+  </fieldset>
+
+ 
+
+  <button type="submit">Send Message</button>
+</form>
+  </body>
+</html>

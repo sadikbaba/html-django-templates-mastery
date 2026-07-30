@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration</title>
+  </head>
+  <body>
+    <h1>Event Registration Form</h1>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Registration Form</legend>
+        <div>
+          <label for="full_name">Full name:</label>
+          <!--prettier-ignore-->
+          <input type="text" id="full_name" name="full_name" placeholder="Enter your full name"   required>
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <!--prettier-ignore-->
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone:</label>
+          <!--prettier-ignore-->
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Experience Level</legend>
+
+        <!--prettier-ignore-->
+        <input type="radio" id="beginner" name="experience" value="beginner" />
+        <label for="beginner">Beginner</label>
+
+        <!--prettier-ignore-->
+        <input type="radio" id="intermediate" name="experience" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+
+        <!--prettier-ignore-->
+        <input type="radio" id="advanced" name="experience" value="advanced">
+        <label for="advanced">Advanced</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Topics of Interest</legend>
+
+        <input type="checkbox" id="html-css" name="skills" value="html-css" />
+        <label for="html-css"> HTML & CSS</label>
+
+        <input
+          type="checkbox"
+          id="javascript"
+          name="skills"
+          value="javascript"
+        />
+        <label for="javascript">JavaScript</label>
+
+        <input type="checkbox" id="python" name="skills" value="python" />
+        <label for="python">Python</label>
+
+        <input type="checkbox" id="django" name="skills" value="django" />
+        <label for="django">Django</label>
+
+        <input type="checkbox" id="AI" name="skills" value="AI" />
+        <label for="AI">AI</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="10"
+          placeholder="Write your message..."
+        ></textarea>
+      </fieldset>
+
+      <button type="submit">REGISTER NOW</button>
+    </form>
+  </body>
+</html>

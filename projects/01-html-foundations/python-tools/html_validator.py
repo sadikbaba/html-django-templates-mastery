@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 
+
 def validate_and_prettify(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
         html_content = file.read()
@@ -28,6 +29,7 @@ def validate_and_prettify(file_path):
 
     print("\n=== Prettified HTML ===")
     print(soup.prettify())
+
 
 # Test with your conference page
 validate_and_prettify("projects/01-html-foundations/conference.html")
