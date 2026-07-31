@@ -1,17 +1,14 @@
-from django.shortcuts import render
-
-from django.http import HttpResponse
-
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .models import Project
+from .forms import ContactForm
 
 def home(request):
-
+    projects = Project.objects.all()
     context = {
         'name': 'Sadik',
-        'course': 'HTML + Django Templates'
+        'projects': projects
     }
     return render(request, 'core/home.html', context)
-
 
 def about(request):
 
@@ -20,3 +17,15 @@ def about(request):
          'course': 'HTML + Django Templates'
      }
      return render(request, "core/about.html", context) 
+
+
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')  # or a success page
+    else:
+        form = ContactForm()
+
+    return render(request, 'core/contact.html', {'form': form})
